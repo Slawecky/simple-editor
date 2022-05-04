@@ -1,10 +1,55 @@
 @import "~normalize.css";
 
 body {
-  background: black;
-  color: #fff;
+  background: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+.naglowek {
+  position: absolute;
+  width: 344px;
+  height: 136px;
+  left: 296px;
+  top: 104px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px;
+  text-align: center;
+  color: black;
+}
+.input {
+  position: absolute;
+width: 922px;
+height: 248px;
+left: 282px;
+top: 231px;
+}
+
+.button_1 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+position: absolute;
+width: 84px;
+height: 40px;
+left: 961px;
+top: 568px;
+}
+.button_2 {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 86px;
+height: 40px;
+left: 485px;
+top: 560px;
 }
