@@ -53,3 +53,24 @@ height: 40px;
 left: 485px;
 top: 560px;
 }
+
+.text {
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 54px;
+height: 24px;
+left: 16px;
+top: 8px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 4px 0px;
+}
