@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple-Editor</title>
-  </head>
-  <body>
-    <div>
-     <h1 class="naglowek">Portable Editor</h1>
-    </div>
-    <div>
-      <input type="text" class="input">
-    </div>
-<div>
-  <button class="button_1"> SAVE</button>
-</div>
 
-<div>
-  <button class="button_2"> <span class="text">LOAD</span></button>
-</div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple-Editor</title>
+</head>
+
+<body>
+  <main class="editor">
+    <h1 class="editor__header">Portable Editor</h1>
+    <form class="form">
+      <textarea aria-label="Input text pls"  class="form__textarea textarea--js" placeholder="Input text pls"></textarea>
+      <div class="form__buttons">
+        <button class="button load--js">Load</button>
+        <button class="button__save save--js"> Save</button>
+       
+      </div>
+    </form>
+  </main>
+</body>
 </html>

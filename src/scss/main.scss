@@ -1,76 +1,64 @@
 @import "~normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-  background: white;
+  font-style: normal;
+  font-weight: 600;
+  background: #d1d3da;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
-.naglowek {
-  position: absolute;
-  width: 344px;
-  height: 136px;
-  left: 296px;
-  top: 104px;
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 44px;
-  line-height: 64px;
-  text-align: center;
+  padding: 16px;
+}
+.editor {
+  width: 100%;
+  max-width: 800px;
+  &__header {
+    font-size: 44px;
+    margin: 0 0 40px;
+  }
+}
+
+.form {
+  &__buttons {
+    margin-left: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__textarea {
+    width: 100%;
+    min-height: 240px;
+    padding: 16px;
+    border: 1px solid;
+  }
+}
+
+.button {
+  background: #d1d3da;
   color: black;
-}
-.input {
-  position: absolute;
-width: 922px;
-height: 248px;
-left: 282px;
-top: 231px;
-}
-
-.button_1 {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-position: absolute;
-width: 84px;
-height: 40px;
-left: 961px;
-top: 568px;
-}
-.button_2 {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-
-position: absolute;
-width: 86px;
-height: 40px;
-left: 485px;
-top: 560px;
-}
-
-.text {
-  display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-
-position: static;
-width: 54px;
-height: 24px;
-left: 16px;
-top: 8px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 4px 0px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 12px 16px;
+  &__save {
+    background: black;
+    color: #d1d3da;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 12px 16px;
+  }
 }
