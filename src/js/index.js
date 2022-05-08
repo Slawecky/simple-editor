@@ -1,9 +1,27 @@
 import '../scss/main.scss';
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+const textarea = document.querySelector(".textarea--js");
+const save = document.querySelector(".save--js");
+const load = document.querySelector(".load--js");
 
-/* place your code below */
+const currentVAlue = localStorage.getItem('entry');
 
-console.log('HELLO 🚀')
+if (currentVAlue) {
+    document.querySelector(".info--js").innerHTML ="👾";
+}
+
+save.addEventListener('click',(e) => {
+    e.preventDefault();
+    localStorage.setItem('entry', textarea.value);
+    if (textarea.value) {
+        document.querySelector(".info--js").innerHTML = "👾";
+    }
+    else{
+        document.querySelector(".info--js").innerHTML = "";
+    }
+})
+
+load.addEventListener('click', (e)=> {
+    e.preventDefault();
+    textarea.value = localStorage.getItem('entry');
+})
